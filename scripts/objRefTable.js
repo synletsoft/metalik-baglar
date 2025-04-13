@@ -91,7 +91,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Sprite.Cnds.CompareOpacity,
-		C3.Plugins.Sprite.Acts.ToggleBoolInstanceVar
+		C3.Plugins.Sprite.Acts.ToggleBoolInstanceVar,
+		C3.Plugins.System.Exps.loadingprogress,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -158,6 +160,10 @@ self.C3_JsPropNameTable = [
 	{prevFlagBtn: 0},
 	{switch: 0},
 	{switchLamb: 0},
+	{loaderEmpty: 0},
+	{loaderFill: 0},
+	{loaderLogo: 0},
+	{orbitalLogo: 0},
 	{videoSpeed: 0},
 	{currentVideoTime: 0},
 	{totalVideoTime: 0},
@@ -174,7 +180,8 @@ self.C3_JsPropNameTable = [
 	{switchLambSignal: 0},
 	{katyonCount: 0},
 	{localVideoIndex: 0},
-	{Index: 0}
+	{Index: 0},
+	{isLoader: 0}
 ];
 
 self.InstanceType = {
@@ -220,5 +227,9 @@ self.InstanceType = {
 	nextFlagBtn: class extends self.ISpriteInstance {},
 	prevFlagBtn: class extends self.ISpriteInstance {},
 	switch: class extends self.ISpriteInstance {},
-	switchLamb: class extends self.ISpriteInstance {}
+	switchLamb: class extends self.ISpriteInstance {},
+	loaderEmpty: class extends self.ISpriteInstance {},
+	loaderFill: class extends self.ISpriteInstance {},
+	loaderLogo: class extends self.ISpriteInstance {},
+	orbitalLogo: class extends self.ISpriteInstance {}
 }
